@@ -5,7 +5,7 @@ export const VIDEOMAKER = {
   phone: '+55 84 99916 8408',
   location: 'São Paulo, SP, Brasil',
   socials: [
-    [ 'youtube', 'http://youtube.com/users/kakamonteiro' ]
+    [ 'youtube', 'http://youtube.com/user/dosoltv' ]
   ]
 };
 
