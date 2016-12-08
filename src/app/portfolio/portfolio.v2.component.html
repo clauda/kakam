@@ -1,0 +1,37 @@
+<section class="section">
+  <div class="container">
+    <div class="row">
+        <ul class="container-filter categories-filter">
+          <li><a class="categories" (click)="cat = undefined" [ngClass]="{'active': cat == undefined}">Todos</a></li>
+          <li *ngFor="let category of categories">
+            <a class="categories" 
+              (click)="cat = category.slug" 
+              [ngClass]="{'active': cat == category.slug}">{{ category.name }}</a>
+          </li>
+        </ul>
+    </div>
+
+    <div class="row">
+
+      <div 
+          *ngFor="let job of portfolio | catfilter:cat"
+          class="col-sm-4 {{ job.categories.join(' ')}}">
+        <div class="item-box">
+          <a [href]="job.youtube_url">
+            <img [src]="job.image_url" alt="{{ job.caption }}" class="item-container" />
+            <div class="item-mask">
+              <div class="item-caption">
+                <h5>{{ job.caption }}</h5>
+                <!--<p class="white">Branding, Design</p>-->
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<hr />

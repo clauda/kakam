@@ -1,0 +1,84 @@
+.skillbar {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+
+  .skillbar-bar {
+    background-color: #f1f1f1;
+    width: 100%;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+    .skillbar-bar-child {
+      height: 8px;
+      width: 0px;
+      background: #666;
+      -webkit-transition-property: width, background-color;
+      -moz-transition-property: width, background-color;
+      -ms-transition-property: width, background-color;
+      -o-transition-property: width, background-color;
+      transition-property: width, background-color;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    }
+  }
+
+  .skillbar-title {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 7px;
+  }
+
+  .skillbar-title, .skill-bar-percent {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .skill-bar-percent {
+    float: right;
+    display: inline-block;
+    font-weight: 400;
+    margin-top: 3px;
+  }
+}
+
+
+.accordion {
+  margin-bottom: 20px;
+  margin-top: 0;
+
+  .accordion-title {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+
+    a {
+      border: 1px solid #f1f1f1;
+      background: #fff;
+      color: #333;
+      display: block;
+      padding: 14px 20px;
+      position: relative;
+      border-radius: 2px;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+    }
+  }
+
+  .accordion-content {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    padding: 10px 20px 10px;
+  }
+}
+
+

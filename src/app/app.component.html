@@ -1,3 +1,38 @@
-<h1>
-  {{title}}
-</h1>
+<div id="page-wraper">
+  <div class="wrapper">
+    <about [videomaker]="videomaker"></about>
+    <portfolio></portfolio>
+    <skills></skills>
+  </div>
+
+  <footer id="footer" class="footer section">
+    <div class="container text-center">
+
+      <div class="footer-logo wow fadeInUp" data-wow-duration="1.5s">
+        <!--<div class="avatar-circle">
+          <img src="/assets/images/karina.jpg" alt="{{ videomaker.first_name }}">
+        </div>-->
+
+        <a class="scroll-top" href="#intro">
+          <h5>{{ videomaker.first_name }} <span class="text-light">{{ videomaker.last_name }}</span></h5>
+        </a>
+      </div>
+
+      <p class="copyright contact-link">
+        <a href="mailto:{{ videomaker.email }}">{{ videomaker.email }}</a><br />
+        <span>{{ videomaker.phone }}</span><br />
+        <span>{{ videomaker.location }}</span>
+      </p>
+
+      <div class="clearfix"></div><br />
+
+      <ul class="social">
+        <li *ngFor="let social of videomaker.socials">
+          <a href="{{ social[1] }}" target="_blank"><i class="fa fa-{{ social[0] }}"></i></a>
+        </li>
+      </ul>
+
+    </div>
+  </footer>
+</div>
+

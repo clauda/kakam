@@ -1,0 +1,33 @@
+<section id="skills" class="section">
+  <div class="container text-center">
+    <h2 class="page-title">Experiências <span class="text-light">&</span> Skills</h2>
+    <div class="spacer clearfix"></div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 mb-sm-30">
+        <div class="accordion">
+          <div *ngFor="let job of experiences">
+            <div class="accordion-title">
+              <a>{{ job.company }}</a>
+            </div>
+            <div class="accordion-content">
+              {{ job.description }} 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+        <div class="skillbar" *ngFor="let skill of skills">
+          <h6 class="skillbar-title">{{ skill.title }}</h6>
+          <!--<div class="skill-bar-percent">{{ skill.percent }}%</div>-->
+          <div class="skillbar-bar">
+            <div class="skillbar-bar-child" [ngStyle]="{ width: skill.percent + '%' }"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
