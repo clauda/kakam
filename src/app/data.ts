@@ -1,7 +1,7 @@
 export const VIDEOMAKER = {
   first_name: 'Karina',
   last_name: 'Monteiro',
-  email: 'kakam@gmail.com',
+  email: 'k.alvesmonteiro@gmail.com',
   phone: '+55 84 99916 8408',
   location: 'São Paulo, SP, Brasil',
   socials: [
@@ -13,73 +13,73 @@ export const PORTFOLIO : any[] = [
   {
     caption: 'Documentário DoSol 10 Anos',
     youtube_url: 'http://youtube.com',
-    image_url: '/assets/images/portfolio/thumb/02.jpg',
+    image_url: 'assets/images/portfolio/thumb/02.jpg',
     categories: [ 'documentary', 'shows' ]
   },
   {
     caption: 'Algum Show',
     youtube_url: 'http://youtube.com',
-    image_url: '/assets/images/portfolio/thumb/03.jpg',
+    image_url: 'assets/images/portfolio/thumb/03.jpg',
     categories: [ 'documentary', 'webseries' ]
   },
   {
     caption: 'Festival DoSol 2016',
     youtube_url: 'http://youtube.com',
-    image_url: '/assets/images/portfolio/thumb/04.jpg',
+    image_url: 'assets/images/portfolio/thumb/04.jpg',
     categories: [ 'webseries' ]
   },
   {
     caption: 'Vinheta Safo',
     youtube_url: 'http://youtube.com',
-    image_url: '/assets/images/portfolio/thumb/05.jpg',
+    image_url: 'assets/images/portfolio/thumb/05.jpg',
     categories: [ 'movies', 'shows', 'webseries' ]
   },
   {
     caption: 'Documentário DoSol 10 Anos',
     youtube_url: 'http://youtube.com',
-    image_url: '/assets/images/portfolio/thumb/06.jpg',
+    image_url: 'assets/images/portfolio/thumb/06.jpg',
     categories: [ 'documentary', 'music' ]
   },
   {
     caption: 'Algum Show',
     youtube_url: 'http://youtube.com',
-    image_url: '/assets/images/portfolio/thumb/07.jpg',
+    image_url: 'assets/images/portfolio/thumb/07.jpg',
     categories: [ 'documentary', 'webseries' ]
   },
   {
     caption: 'Festival DoSol 2016',
     youtube_url: 'http://youtube.com',
-    image_url: '/assets/images/portfolio/thumb/08.jpg',
+    image_url: 'assets/images/portfolio/thumb/08.jpg',
     categories: [ 'webseries' ]
   },
   {
     caption: 'Vinheta Safo',
     youtube_url: 'http://youtube.com',
-    image_url: '/assets/images/portfolio/thumb/09.jpg',
+    image_url: 'assets/images/portfolio/thumb/09.jpg',
     categories: [ 'commercials', 'shows' ]
   },
   {
     caption: 'Documentário DoSol 10 Anos',
     youtube_url: 'http://youtube.com',
-    image_url: '/assets/images/portfolio/thumb/02.jpg',
+    image_url: 'assets/images/portfolio/thumb/02.jpg',
     categories: [ 'documentary', 'shows' ]
   },
   {
     caption: 'Algum Show',
     youtube_url: 'http://youtube.com',
-    image_url: '/assets/images/portfolio/thumb/03.jpg',
+    image_url: 'assets/images/portfolio/thumb/03.jpg',
     categories: [ 'documentary', 'webseries' ]
   },
   {
     caption: 'Festival DoSol 2016',
     youtube_url: 'http://youtube.com',
-    image_url: '/assets/images/portfolio/thumb/01.jpg',
+    image_url: 'assets/images/portfolio/thumb/01.jpg',
     categories: [ 'webseries' ]
   },
   {
     caption: 'Festival DoSol 2016',
     youtube_url: 'http://youtube.com',
-    image_url: '/assets/images/portfolio/thumb/07.jpg',
+    image_url: 'assets/images/portfolio/thumb/07.jpg',
     categories: [ 'webseries' ]
   }
 ];
