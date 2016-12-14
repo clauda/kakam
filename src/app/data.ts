@@ -18,20 +18,6 @@ export const PORTFOLIO : any[] = [
     categories: [ 'commercials' ]
   },
   {
-    id: 2,
-    caption: 'DoSol 15 Anos',
-    youtube_code: 'Subiw3inmWI',
-    category: 'commercials',
-    categories: [ 'commercials' ]
-  },
-  {
-    id: 3,
-    caption: 'Plutão Já Foi Planeta',
-    youtube_code: 'IBRIFuc-h6k',
-    category: 'commercials',
-    categories: [ 'commercials' ]
-  },
-  {
     id: 4,
     caption: 'Circuito Cultural Ribeira 2016',
     youtube_code: 'A0w9CMGEww4',
@@ -46,37 +32,16 @@ export const PORTFOLIO : any[] = [
     categories: [ 'documentary' ]
   },
   {
+    id: 2,
+    caption: 'DoSol 15 Anos',
+    youtube_code: 'Subiw3inmWI',
+    category: 'commercials',
+    categories: [ 'commercials' ]
+  },
+  {
     id: 6,
     caption: 'Uskaravelho 10 anos de Alegria',
     youtube_code: 'RglG1e5EYgs',
-    category: 'documentary',
-    categories: [ 'documentary' ]
-  },
-  {
-    id: 7,
-    caption: 'Festival DoSol 2015',
-    youtube_code: 'f4xHjjfLS7w',
-    category: 'documentary',
-    categories: [ 'documentary' ]
-  },
-  {
-    id: 8,
-    caption: 'Festival DoSol Warmup SP',
-    youtube_code: 'trYg0oxGZMs',
-    category: 'documentary',
-    categories: [ 'documentary' ]
-  },
-  {
-    id: 9,
-    caption: 'Banda Camarones Tour na Europa',
-    youtube_code: '7UoLQeUOJfw',
-    category: 'documentary',
-    categories: [ 'documentary' ]
-  },
-  {
-    id: 10,
-    caption: 'Banda Camarones Tour na Europa - Parte 2',
-    youtube_code: 'aHmGu186rvE',
     category: 'documentary',
     categories: [ 'documentary' ]
   },
@@ -88,11 +53,53 @@ export const PORTFOLIO : any[] = [
     categories: [ ' shows ']
   },
   {
+    id: 7,
+    caption: 'Festival DoSol 2015',
+    youtube_code: 'f4xHjjfLS7w',
+    category: 'documentary',
+    categories: [ 'documentary' ]
+  },
+  {
+    id: 3,
+    caption: 'Plutão Já Foi Planeta',
+    youtube_code: 'IBRIFuc-h6k',
+    category: 'commercials',
+    categories: [ 'commercials' ]
+  },
+  {
+    id: 8,
+    caption: 'Festival DoSol Warmup SP',
+    youtube_code: 'trYg0oxGZMs',
+    category: 'documentary',
+    categories: [ 'documentary' ]
+  },
+   {
     id: 12,
     caption: 'Dead Fish',
     youtube_code: 'wHa9viTSSvc',
     category: 'shows',
     categories: [ 'shows' ]
+  },
+  {
+    id: 9,
+    caption: 'Banda Camarones Tour na Europa',
+    youtube_code: '7UoLQeUOJfw',
+    category: 'documentary',
+    categories: [ 'documentary' ]
+  },
+   {
+    id: 18,
+    caption: 'Acompanhando a banda Camarones no Rock in Rio',
+    youtube_code: 'CnKdhf6ON90',
+    category: 'movies',
+    categories: [ 'movies' ]
+  },
+  {
+    id: 10,
+    caption: 'Banda Camarones Tour na Europa - Parte 2',
+    youtube_code: 'aHmGu186rvE',
+    category: 'documentary',
+    categories: [ 'documentary' ]
   },
   {
     id: 13,
@@ -102,39 +109,18 @@ export const PORTFOLIO : any[] = [
     categories: [ 'shows' ]
   },
   {
+    id: 20,
+    caption: 'Diário de gravação: Plutão Já foi Planeta',
+    youtube_code: 'j14ncQeDd0I',
+    category: 'movies',
+    categories: [ 'movies' ]
+  },
+  {
     id: 14,
     caption: 'Far From Alaska',
     youtube_code: '5f-Ya9fQmBM',
     category: 'shows',
     categories: [ 'shows' ]
-  },
-  {
-    id: 15,
-    caption: 'DuSouto',
-    youtube_code: '-gsrfmShwHw',
-    category: 'shows',
-    categories: [ 'shows' ]
-  },
-  {
-    id: 16,
-    caption: 'Medula',
-    youtube_code: 'BGKoBCNQaXE',
-    category: 'shows',
-    categories: [ 'shows' ]
-  },
-  {
-    id: 17,
-    caption: 'Plutão Já Foi Planeta',
-    youtube_code: 'dvgEMRO3xA8',
-    category: 'shows',
-    categories: [ 'shows' ]
-  },
-  {
-    id: 18,
-    caption: 'Acompanhando a banda Camarones no Rock in Rio',
-    youtube_code: 'CnKdhf6ON90',
-    category: 'movies',
-    categories: [ 'movies' ]
   },
   {
     id: 19,
@@ -144,11 +130,11 @@ export const PORTFOLIO : any[] = [
     categories: [ 'movies' ]
   },
   {
-    id: 20,
-    caption: 'Diário de gravação: Plutão Já foi Planeta',
-    youtube_code: 'j14ncQeDd0I',
-    category: 'movies',
-    categories: [ 'movies' ]
+    id: 15,
+    caption: 'DuSouto',
+    youtube_code: '-gsrfmShwHw',
+    category: 'shows',
+    categories: [ 'shows' ]
   },
   {
     id: 21,
@@ -158,6 +144,13 @@ export const PORTFOLIO : any[] = [
     categories: [ 'movies' ]
   },
   {
+    id: 16,
+    caption: 'Medula',
+    youtube_code: 'BGKoBCNQaXE',
+    category: 'shows',
+    categories: [ 'shows' ]
+  },
+  {
     id: 22,
     caption: 'Diário de Gravação banda Talma&Gadelha',
     youtube_code: 'ZWMg4kzNzA4',
@@ -165,11 +158,11 @@ export const PORTFOLIO : any[] = [
     categories: [ 'movies' ]
   },
   {
-    id: 23,
-    caption: 'DoSol Tv Sessions Forgotten Boys',
-    youtube_code: 'fZ8Kn9f6Jh8',
-    category: 'movies',
-    categories: [ 'movies' ]
+    id: 17,
+    caption: 'Plutão Já Foi Planeta',
+    youtube_code: 'dvgEMRO3xA8',
+    category: 'shows',
+    categories: [ 'shows' ]
   },
   {
     id: 24,
@@ -177,8 +170,14 @@ export const PORTFOLIO : any[] = [
     youtube_code: 'Nx5CGxuLJ48',
     category: 'webseries',
     categories: [ 'webseries' ]
+  },
+  {
+    id: 23,
+    caption: 'DoSol Tv Sessions Forgotten Boys',
+    youtube_code: 'fZ8Kn9f6Jh8',
+    category: 'movies',
+    categories: [ 'movies' ]
   }
-  
 ];
 
 export const CATEGORIES : any[] = [
