@@ -8,6 +8,8 @@ import {
   animate
 } from '@angular/core';
 
+import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browser';
+
 import { PortfolioService } from './portfolio.service';
 import { CATEGORIES } from '../data';
 
@@ -36,8 +38,15 @@ import { CATEGORIES } from '../data';
 export class PortfolioComponent {
   categories = CATEGORIES;
   portfolio;
+  trustedResource : SafeResourceUrl;
 
-  constructor(private portfolioService : PortfolioService) {
+  constructor(
+    private portfolioService : PortfolioService,
+    private sanitizer: DomSanitizer) {
     this.portfolio = this.portfolioService.all();
+  }
+
+  setSafeMedia(_url : any) : void {
+    this.trustedResource = this.sanitizer.bypassSecurityTrustResourceUrl(_url);
   }
 }

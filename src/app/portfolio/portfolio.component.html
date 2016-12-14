@@ -19,28 +19,39 @@
 
     <div class="portfolio-grid-fit row">
       <div 
-        class="portfolio-item" *ngFor="let job of portfolio | catfilter:cat" [@magic]="'true'">
-        <div class="portfolio-box {{ job.categories.join(' ')}}">
+        class="portfolio-item" 
+        *ngFor="let job of portfolio | catfilter:cat" 
+        [@magic]="'true'">
+        <div class="portfolio-box {{ job.category }}">
           <a class="portfolio-image-wrap">
-            <img [src]="job.image_url" alt="{{ job.caption }}" />
+            <img [src]="job.image_url" [alt]="job.caption" />
           </a>
 
           <div class="portfolio-caption">
             <div class="portfolio-caption-tb">
               <div class="portfolio-caption-tb-cell">
                 <h5>{{ job.caption }}</h5>
-                <p>{{ job.categories.join(' - ') }}</p>
+                
                 <ul class="portfolio-btn-wraper">
                   <li>
-                    <a data-toggle="modal" data-target=".open-tv" class="btn btn-color" title="{{ job.caption }}"><i class="fa fa-search"></i></a>
+                    <a 
+                      data-toggle="modal" 
+                      data-target="#tv" 
+                      attr.data-target="#tv" 
+                      class="btn btn-color" 
+                      title="{{ job.caption }}" 
+                      (click)="setSafeMedia(job.video_url)">
+                        <i class="fa fa-play"></i>
+                    </a>
                   </li>
                   <li>
-                    <a class="btn btn-danger" target="_blank" href="{{ job.youtube_url }}"><i class="fa fa-youtube"></i></a>
+                    <a class="btn btn-danger" target="_blank" href="{{ job.watch_me }}"><i class="fa fa-youtube"></i></a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -48,10 +59,10 @@
   </div>
 </section>
 
-<div class="modal fade open-tv" tabindex="-1" role="dialog" aria-labelledby="youtube">
+<div class="modal fade" id="tv" tabindex="-1" role="dialog" aria-labelledby="Youtube">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content embed-responsive embed-responsive-16by9">
-      <iframe width="853" height="480" src="https://www.youtube.com/embed/3AtDnEC4zak?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+      <iframe width="853" height="480" [src]="trustedResource" frameborder="0" allowfullscreen class="embed-responsive-item" *ngIf="trustedResource"></iframe>
     </div>
   </div>
 </div>
