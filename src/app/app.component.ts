@@ -2,7 +2,7 @@ import { Component, AfterViewInit } from '@angular/core';
 
 import { VIDEOMAKER } from './data';
 
-import * as wow from 'wowjs';
+import * as wowjs from 'wowjs';
 
 @Component({
   selector: 'root',
@@ -13,6 +13,7 @@ export class AppComponent implements AfterViewInit {
   public videomaker = VIDEOMAKER;
 
   ngAfterViewInit(){
-    new wow.WOW().init(); 
+    let wow = new wowjs.WOW(); 
+    wow.init();
   }
 }
