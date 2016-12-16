@@ -80,7 +80,6 @@
 
    .portfolio-image-wrap {
       display: block;
-      min-height: 200px;
       img { width: 100%; }
     }
 
@@ -118,7 +117,7 @@
       .portfolio-caption-tb-cell {
         display: table-cell;
         vertical-align: middle;
-        padding: 30px;
+        padding: 20px 30px;
         color: #333;
         text-align: center;
       }
