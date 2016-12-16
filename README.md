@@ -1,6 +1,6 @@
 # Videomaker
 
-Kaka's Vídeo Portfolio http://krawdyah.github.io/kakam
+Kaka's Vídeo Portfolio http://kaka.sorta.in
 
 an Angular 2 SPA. 
 

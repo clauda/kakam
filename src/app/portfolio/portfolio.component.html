@@ -62,6 +62,7 @@
 <div class="modal fade" id="tv" tabindex="-1" role="dialog" aria-labelledby="Youtube">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content embed-responsive embed-responsive-16by9">
+      <button type="button" class="close" (click)="stopMedia()" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <iframe width="853" height="480" [src]="trustedResource" frameborder="0" allowfullscreen class="embed-responsive-item" *ngIf="trustedResource"></iframe>
     </div>
   </div>

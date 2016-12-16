@@ -39,7 +39,7 @@ export class PortfolioComponent {
   categories = CATEGORIES;
   portfolio;
   trustedResource : SafeResourceUrl;
-
+  
   constructor(
     private portfolioService : PortfolioService,
     private sanitizer: DomSanitizer) {
@@ -48,5 +48,9 @@ export class PortfolioComponent {
 
   setSafeMedia(_url : any) : void {
     this.trustedResource = this.sanitizer.bypassSecurityTrustResourceUrl(_url);
+  }
+
+  stopMedia(){
+    this.trustedResource = undefined;
   }
 }

@@ -64,5 +64,16 @@ h6 { font-size: 12px; }
 .text-light { font-weight: 300; }
 
 .modal-content {
+  position: initial;
   border-radius: 2px;
 }
+
+button.close {
+  position: absolute;
+  top: 0;
+  right: -25px;
+  opacity: 0.8;
+  font-size: 25px;
+  color: #fff;
+}
+.close:hover { color: #fff; }
