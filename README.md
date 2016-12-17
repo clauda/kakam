@@ -23,5 +23,5 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Deploying to Github Pages
 
-Run `ng github-pages:deploy --base-href='kakam'` to deploy to Github Pages.
+Run `ng github-pages:deploy --base-href 'kakam'` to deploy to Github Pages.
 
