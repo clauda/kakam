@@ -5,12 +5,14 @@ import { CatfilterPipe } from './catfilter.pipe';
 
 const PORTFOLIO_MOCKS = [
   {
+    id: 1,
     caption: 'Documentary DoSol 10 Years',
-    categories: [ 'documentary', 'webseries' ]
+    category: 'documentary'
   },
   {
+    id: 2,
     caption: 'Awesome Show 2016',
-    categories: [ 'documentary', 'shows' ]
+    category: 'shows'
   }
 ];
 
@@ -25,7 +27,7 @@ describe('CatfilterPipe', () => {
   });
 
   it('providing category should filter portfolio', ()=> {
-    expect(pipe.transform(_portfolio, 'shows')[0].caption).toBe('Awesome Show 2016');
+    expect(pipe.transform(_portfolio, 'shows')[0].id).toEqual(2);
   });
 
   it('providing no category should return all portfolio', ()=> {
