@@ -20,7 +20,7 @@ describe('CatfilterPipe', () => {
   let pipe : CatfilterPipe;
   let _portfolio = PORTFOLIO_MOCKS;
 
-  beforeEach(()=> pipe = new CatfilterPipe());
+  beforeEach(() => pipe = new CatfilterPipe());
 
   it('create an instance', () => {
     expect(pipe).toBeTruthy();

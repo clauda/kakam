@@ -5,7 +5,7 @@
 
   <div class="container-fluid">
     <div class="row">
-      <ul class="portfolio-filter">
+      <ul class="portfolio-filter col">
         <li><a class="categories" (click)="cat = undefined" [ngClass]="{'active': cat == undefined}">Todos</a></li>
         <li *ngFor="let category of categories">
           <a class="categories" 

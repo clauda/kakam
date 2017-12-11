@@ -14,5 +14,5 @@ export class SkillsComponent {
   experiences : any[] = RESUME.experiences;
 
   constructor() { }
-  
+
 }

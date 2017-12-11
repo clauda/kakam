@@ -39,7 +39,7 @@ export class PortfolioComponent {
   categories = CATEGORIES;
   portfolio;
   trustedResource : SafeResourceUrl;
-  
+
   constructor(
     private portfolioService : PortfolioService,
     private sanitizer: DomSanitizer) {

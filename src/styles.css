@@ -61,7 +61,7 @@ h6 { font-size: 12px; }
 .no-margins { margin: 0; }
 .long { margin: 140px 0 }
 .spacer { margin: 30px 0; }
-.text-light { font-weight: 300; }
+.text-thin { font-weight: 300; }
 
 .modal-content {
   position: initial;

@@ -46,7 +46,7 @@ describe('PortfolioComponent', () => {
   it('.setSafeMedia should be defined', () => {
     expect(component.setSafeMedia).toBeTruthy();
   });
-  
+
   it('should have trustedResource', () => {
     component.setSafeMedia('http://youtu.be/unsafe');
     fixture.detectChanges();
