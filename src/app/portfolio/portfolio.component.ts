@@ -37,7 +37,8 @@ import { CATEGORIES } from '../data';
 })
 export class PortfolioComponent {
   categories = CATEGORIES;
-  portfolio;
+  portfolio : any;
+  cat : any;
   trustedResource : SafeResourceUrl;
 
   constructor(
