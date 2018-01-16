@@ -2,7 +2,7 @@ export const VIDEOMAKER = {
   first_name: 'Karina',
   last_name: 'Monteiro',
   email: 'k.alvesmonteiro@gmail.com',
-  phone: '+55 84 99916 8408',
+  phone: '+55 11 94899 4214',
   location: 'São Paulo, SP, Brasil',
   socials: [
     [ 'youtube', 'http://youtube.com/user/karinamonteiroed' ]
@@ -10,6 +10,13 @@ export const VIDEOMAKER = {
 };
 
 export const PORTFOLIO : any[] = [
+  {
+    id: 0,
+    caption: 'Curso do Whindersson',
+    youtube_code: false,
+    image_url: 'assets/images/portfolio/26.png',
+    category: 'courses'
+  },
   {
     id: 1,
     caption: 'Guria Produtora',
@@ -173,7 +180,7 @@ export const PORTFOLIO : any[] = [
   },
   {
     id: 23,
-    caption: 'DoSol Tv Sessions Forgotten Boys',
+    caption: 'DoSol TV Sessions Forgotten Boys',
     youtube_code: 'fZ8Kn9f6Jh8',
     image_url: 'assets/images/portfolio/23.jpg',
     category: 'movies'
@@ -184,17 +191,24 @@ export const PORTFOLIO : any[] = [
     youtube_code: 'YMOkb0FYdyU',
     image_url: 'assets/images/portfolio/25.jpg',
     category: 'webseries'
-  }
-
+  },
+  {
+    id: 25,
+    caption: 'English Yourself - Músicas e Séries',
+    youtube_code: '3ue7uqmdf1M',
+    image_url: 'assets/images/portfolio/27.jpg',
+    category: 'courses'
+  },
 ];
 
 export const CATEGORIES : any[] = [
-  { slug: 'documentary',  name: 'Documentários' }, 
-  { slug: 'shows', name: 'Shows' }, 
+  { slug: 'documentary',  name: 'Documentários' },
+  { slug: 'shows', name: 'Shows' },
   { slug: 'webseries', name: 'Web Series/TV' },
-  { slug: 'movies', name: 'Short Films' }, 
-  { slug: 'commercials', name: 'Vinhetas' } 
-]
+  { slug: 'movies', name: 'Short Films' },
+  { slug: 'commercials', name: 'Vinhetas' },
+  { slug: 'courses', name: 'Cursos' }
+];
 
 export const RESUME = {
   skills: [

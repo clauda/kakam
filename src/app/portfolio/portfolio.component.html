@@ -32,7 +32,7 @@
               <div class="portfolio-caption-tb-cell">
                 <h5>{{ job.caption }}</h5>
                 
-                <ul class="portfolio-btn-wraper">
+                <ul class="portfolio-btn-wraper" *ngIf="job.youtube_code">
                   <li>
                     <a 
                       data-toggle="modal" 
